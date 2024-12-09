@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="h-screen bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center"
+  >
+    <div
+      class="bg-white flex flex-col items-center justify-center p-10 rounded-lg"
+    >
+      <h1 class="pb-5 text-blue-950 text-xl font-bold">To-Do List</h1>
+
+      <div class="flex items-center justify-center pb-5">
+        <input
+          type="text"
+          name="task"
+          id="newTask"
+          class="bg-slate-200 p-2 rounded-3xl w-64 -mr-8 focus:outline-none"
+        />
+
+        <button
+          type="button"
+          class="bg-gradient-to-r hover:from-teal-400 hover:to-blue-500 from-pink-500 to-orange-500 rounded-3xl p-2 font-bold text-red-950"
+          id="addTask"
+        >
+          Add Task
+        </button>
+      </div>
+      <div class="w-full">
+        <ul class="">
+          <li
+            class="relative text-xl px-3 py-1 bg-slate-200 p-2 rounded-3xl focus:outline-none"
+          >
+            task 1
+            <button
+              type="button"
+              class="bg-red-600 font-medium right-0 absolute px-2 rounded-3xl hover:bg-red-700"
+              id="delete"
+            >
+              Delete
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
